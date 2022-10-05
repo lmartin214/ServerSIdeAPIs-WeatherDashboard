@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+
     <!-- Bootstrap CSS file -->
     <link
     rel="stylesheet"
@@ -16,7 +17,103 @@
 
 
 <body>
-    <header>Weather Dashboard</header>
+    <header class="jumbotron jumbotron-fluid" style="background-color: blue; background-size: cover">
+        <h1 class="display-4 text-center">Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h4>Search for a City:</h4>
+            
+                <form id="city-form">
+                    <input type="text" id="city-input"/>
+                    <button type="button" id="add-city" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <div id="buttons-view" class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+
+            <div class="col-md-8 c2">
+
+                <div class="r2a">
+                    <h3 class="city"></h3>
+                    <p class="temperature"></p>
+                    <p class="humidity"></p>
+                    <p class="wind"></p>
+                    <p class="uvIndex"></p>
+                </div>
+
+                <div class="forecast">
+                    <h4>5-Day Forecast:</h4>
+                </div>
+
+                <div class="row r2b justify-content-between">
+                    
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dayOne"></h5>
+                                <p class="card-text dayOneIcon"></p>
+                                <p class="card-text dayOneTemperature"></p>
+                                <p class="card-text dayOneHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dayTwo"></h5>
+                                <p class="card-text dayTwoIcon"></p>
+                                <p class="card-text dayTwoTemperature"></p>
+                                <p class="card-text dayTwoHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dayThree"></h5>
+                                <p class="card-text dayThreeIcon"></p>
+                                <p class="card-text dayThreeTemperature"></p>
+                                <p class="card-text dayThreeHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dayFour"></h5>
+                                <p class="card-text dayFourIcon"></p>
+                                <p class="card-text dayFourTemperature"></p>
+                                <p class="card-text dayFourHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dayFive"></h5>
+                                <p class="card-text dayFiveIcon"></p>
+                                <p class="card-text dayFiveTemperature"></p>
+                                <p class="card-text dayFiveHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     
 
