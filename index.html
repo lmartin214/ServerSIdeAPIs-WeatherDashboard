@@ -22,12 +22,12 @@
     <div class="jumbotron jumbotron-fluid" style="background-size:cover; background-color: #425aa4;">
         <h1 class="display-4 text-center">Weather Dashboard</h1>
     </div>
-
+    <!--main container-->
     <div class="container">
         
         <div class="row r1">
             <div class="col-md-4 c1">
-
+                <!--side bar with search form-->
                 <h4>Search for a City:</h4>
                 
                 <form id="city-form">
@@ -36,14 +36,14 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
-
+                <!--container for unordered list of previous searched cities-->
                 <div id="buttons-view" class="card" style="width: 18rem;">
                     <ul class="list-group list-group-flush"></ul>
                 </div>
             </div>
 
             <div class="col-md-8 c2">
-
+                <!--container for searched results-->
                 <div class="r2a">
                     <h3 class="city"></h3>
                     <p class="temperature"></p>
@@ -51,11 +51,11 @@
                     <p class="wind"></p>
                     <p class="uvIndex"></p>
                 </div>
-
+                <!--container for 5 day forecast-->
                 <div class="forecast">
                         <h4>5-Day Forecast:</h4>
                 </div>
-
+                <!--cards to show each of the days individually-->
                 <div class="row r2b justify-content-between">
                     
                     <div class="col-md-2">
@@ -116,12 +116,21 @@
             </div>
         </div>
     </div>
-
+    <!--script link for Moment.js helping with time-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--script link for JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+        crossorigin="anonymous">
+    </script>
+    <!--Bootstrap link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
+        crossorigin="anonymous">
+    </script>
+
+    <!--Script link for main JS file-->
     <script src="./Assets/js/script.js"></script>
 
 </body>
