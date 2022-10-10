@@ -1,3 +1,33 @@
-h1 {
-    color: aliceblue;
+/*Just basic color and font styles with margins for placement*/
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: white;
+}
+
+#jumbotron {
+    background-color: #425aa2 ;
+}
+
+ul.list-group.list-group-flush {
+    margin-top: 20px;
+}
+
+#add-city.btn.btn-primary {
+    margin-bottom: 10px;
+}
+
+div.card {
+    background-color: #425aa2;
+    border-color: #425aa2;
+}
+
+.list-group.list-group-flush {
+    background-color: #425aa2;
+    border-color: #425aa2;
+}
+
+.btn.btn-primary {
+    background-color: #425aa2;
+    border-color: #425aa2;
 }
